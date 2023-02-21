@@ -12,7 +12,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-    <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
+    <title>스파르타 부트스트랩 숙제제출용 </title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 
@@ -42,7 +42,6 @@
             border-radius: 50px;
             margin-top: 20px;
 
-            /*  solid (실선) */
         }
 
         .mytitle>button:hover {
@@ -79,7 +78,6 @@
     </style>
     <script>
         $(document).ready(function() {
-            // 이게있으면 자동으로 찍힘
     fetch("http://spartacodingclub.shop/sparta_api/weather/seoul").then(res => res.json()).then(data => {
         let number = data['temp']
         $('#temp').text(number)
